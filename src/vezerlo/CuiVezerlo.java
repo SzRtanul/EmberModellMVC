@@ -11,11 +11,8 @@ public class CuiVezerlo {
         this.modell = modell;
         this.nezet = nezet;
         
-        String nev = nezet.nevBeker();
-        int kor = nezet.korBeker();
-        
-        modell.setNev(nev);
-        modell.setKor(kor);
+        modell.setNev(nezet.getNev());
+        modell.setKor(nezet.getKor());
         
         String kimenet = "%s kora: %d\n".formatted(modell.getNev(), modell.getKor());
         nezet.mutat(kimenet);

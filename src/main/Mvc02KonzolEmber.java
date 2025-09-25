@@ -7,10 +7,11 @@ import vezerlo.CuiVezerlo;
 public class Mvc02KonzolEmber {
 
     public static void main(String[] args) {
-        /* úgy kell modellt létrehozni, h nem ismerem
-        a nézetben megadott adatokat! */
-        EmberModell modell = new EmberModell("nem ezt adom meg");
         CuiNezet nezet = new CuiNezet();
+        nezet.nevBeker();
+        nezet.korBeker();
+        
+        EmberModell modell = new EmberModell(nezet.getNev(), nezet.getKor());
         CuiVezerlo vezerlo = new CuiVezerlo(modell, nezet);
     }
     
