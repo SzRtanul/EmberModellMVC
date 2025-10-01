@@ -4,13 +4,17 @@ public class EmberModell {
     private String nev;
     private int kor;
 
-    public EmberModell(String nev) {
-        this(nev, 18);
-    }
-
     public EmberModell(String nev, int kor) {
         this.nev = nev;
         setKor(kor);
+    }
+    
+    public EmberModell(String nev) {
+        this(nev, 18);
+    }
+    
+    public EmberModell() {
+        this("Alan Smitheeee", 0);
     }
 
     public String getNev() {
