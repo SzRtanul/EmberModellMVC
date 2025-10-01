@@ -35,6 +35,4 @@ public class EmberModell {
         }
         this.kor = kor;
     }
-    
-    
 }
